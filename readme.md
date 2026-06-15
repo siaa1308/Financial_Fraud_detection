@@ -265,7 +265,7 @@ python3 results_report.py
 
 ---
 
-# 🛠 Future Improvements
+# Future Improvements
 
 * FedProx
 * Differential Privacy
