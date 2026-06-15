@@ -12,7 +12,7 @@ This project simulates multiple banks collaboratively detecting fraud **without 
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 ```text
 final_capstone/
@@ -42,7 +42,7 @@ final_capstone/
 
 ---
 
-# ⚙️ Setup Instructions
+# Setup Instructions
 
 ## 1. Create Virtual Environment
 
@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 ---
 
-# 📦 requirements.txt
+# requirements.txt
 
 Create a file named `requirements.txt` with:
 
@@ -86,7 +86,7 @@ scipy
 
 ---
 
-# 📂 Add Dataset Files
+# Add Dataset Files
 
 Place these CSV files inside the `data/` folder:
 
@@ -98,7 +98,7 @@ Bank_C.csv
 
 ---
 
-# 🚀 Run the Project
+# Run the Project
 
 # Step 1: Preprocess All Banks
 
@@ -128,7 +128,7 @@ processed/
 
 ---
 
-# 🧠 Step 2: Run Local Continual Learning
+# Step 2: Run Local Continual Learning
 
 This trains one bank locally using:
 
@@ -178,7 +178,7 @@ python3 continual/bank_train.py
 
 ---
 
-# 🌍 Step 3: Run Federated Learning (Baseline)
+# Step 3: Run Federated Learning (Baseline)
 
 Open **4 terminals**.
 
@@ -208,7 +208,7 @@ python3 federated/client.py processed/bankC.pkl
 
 ---
 
-# 🔥 Step 4: Run Federated Continual Learning (Final Model)
+# Step 4: Run Federated Continual Learning (Final Model)
 
 Open **4 terminals**.
 
@@ -238,7 +238,7 @@ python3 federated/client_fcl.py processed/bankC.pkl
 
 ---
 
-# 📊 Step 5: Generate Results Report
+# Step 5: Generate Results Report
 
 This prints:
 
@@ -255,41 +255,7 @@ python3 results_report.py
 
 ---
 
-# 📈 Evaluation Metrics
-
-Because fraud data is imbalanced, we use:
-
-* Precision
-* Recall
-* F1-score
-
-Accuracy alone is not enough.
-
----
-
-# 🔒 Privacy Principle
-
-Banks never share raw transaction data.
-
-Only model parameters are exchanged during federated learning.
-
----
-
-# 🧠 Model Summary
-
-## Local Model
-
-* MLP Neural Network
-* Weighted BCE Loss
-* Replay Buffer
-
-## Federated Aggregation
-
-* FedAvg
-
----
-
-# 📌 Example Results
+# Results
 
 | Bank | Local F1 | Federated F1 |
 | ---- | -------- | ------------ |
@@ -309,7 +275,3 @@ Only model parameters are exchanged during federated learning.
 * Dashboard UI
 
 ---
-
-# 👨‍🎓 Capstone Title
-
-**Federated Continual Learning for Financial Fraud Detection**
